@@ -21,12 +21,19 @@ int main() {
     printf("\n");
 
     int tries;
-    if (level == 1) {
+    switch (tries) {
+    case 1:
         tries = TRIES_EASY;
-    } else if (level == 2) {
+        break;
+    case 2:
         tries = TRIES_MEDIUM;
-    } else if (level == 3) {
+        break;
+    case 3:
         tries = TRIES_HARD;
+        break;   
+    default:
+        tries = TRIES_EASY;
+        break;
     }
 
 
