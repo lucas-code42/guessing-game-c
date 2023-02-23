@@ -22,18 +22,18 @@ int main() {
 
     int tries;
     switch (tries) {
-    case 1:
-        tries = TRIES_EASY;
-        break;
-    case 2:
-        tries = TRIES_MEDIUM;
-        break;
-    case 3:
-        tries = TRIES_HARD;
-        break;   
-    default:
-        tries = TRIES_EASY;
-        break;
+        case 1:
+            tries = TRIES_EASY;
+            break;
+        case 2:
+            tries = TRIES_MEDIUM;
+            break;
+        case 3:
+            tries = TRIES_HARD;
+            break;   
+        default:
+            tries = TRIES_EASY;
+            break;
     }
 
 
