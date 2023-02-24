@@ -14,7 +14,7 @@ int main() {
     printf("* bem vindo ao jogo *\n");
     printf("*********************\n");
 
-    printf("* Escolha um nivel de difículdade: 1 fácil - 2 médio - 3 difícil *\n");
+    printf("* Escolha um nivel de difículdade: (1) fácil - (2) médio - (3) difícil *\n");
     int level;
     printf("level: ");
     scanf("%d", &level);
@@ -36,9 +36,9 @@ int main() {
             break;
     }
 
-
+    // epoch time / unix timestamp
     int s = time(0);
-    srand(s);
+    srand(s); // passa o param para a semente de random...
     int randomNumber = rand();
 
     // declarando uma variavel int
@@ -47,8 +47,6 @@ int main() {
     int userTries = 0;
     double score = 1000;
 
-    
-   
     for (int i = 1; i <= tries; i++) {
         printf("Tentativa %d de %d\n", i, tries);
         userTries = i;
